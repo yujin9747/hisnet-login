@@ -31,13 +31,13 @@ public class Main {
         Map<String, Object> result = authService.hisnetLogin(loginForm);
 
         val studentForm = StudentForm(
-                sid = hisnetInfo["user_number"].toString(),
-                name = hisnetInfo["user_name"].toString(),
-                department = hisnetInfo["dept_name"].toString(),
-                major1 = hisnetInfo["major1_name"].toString(),
-                major2 = hisnetInfo["major2_name"].toString(),
-                year = hisnetInfo["grade"].toString().toInt(),
-                semesterCount = hisnetInfo["reg_semester"].toString().toInt(),
+                sid = result["user_number"].toString(),
+                name = result["user_name"].toString(),
+                department = result["dept_name"].toString(),
+                major1 = result["major1_name"].toString(),
+                major2 = result["major2_name"].toString(),
+                year = result["grade"].toString().toInt(),
+                semesterCount = result["reg_semester"].toString().toInt(),
         )
     }
 }
