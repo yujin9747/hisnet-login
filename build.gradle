@@ -22,3 +22,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
+group = 'io.github.yujin9747'
+version = '1.0.0'
+description = 'Handong Global University Hisnet Login Library'
